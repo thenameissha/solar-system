@@ -8,9 +8,10 @@ on:
       - main
       - 'feature/*'
 env:
-  MONGO_URI: 'mongodb+srv://supercluster.d3jj.mongodb.net/superData'
-  MONGO_USERNAME: ${{ vars.MONGO_USERNAME }}
-  MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
+  MONGO_URI: 'MONGO_URI: mongodb://localhost:27017/testdb'
+  #MONGO_URI: 'mongodb+srv://supercluster.d3jj.mongodb.net/superData'
+  # MONGO_USERNAME: ${{ vars.MONGO_USERNAME }}
+  # MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
 
 jobs:
   unit-testing:
